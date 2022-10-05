@@ -3,7 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "type": "module",
     "scripts": {
+        "run main": "node index.js",
         "test": "jest",
         "test:cover": "jest --coverage",
         "test:watch": "jest --watch --coverage"
@@ -11,9 +13,12 @@
     "author": "superzadeh <superzadeh@outlook.com>",
     "license": "MIT",
     "devDependencies": {
+        "@babel/preset-env": "7.7.1",
         "babel-jest": "24.9.0",
         "babel-polyfill": "6.26.0",
-        "@babel/preset-env": "7.7.1",
         "jest": "24.9.0"
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.18.6"
     }
 }
